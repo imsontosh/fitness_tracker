@@ -279,6 +279,8 @@
         } else {
             $.error( 'Method "' +  method + '" does not exist in flexisel plugin!');
         }        
+
+
 };
 
 })(jQuery);

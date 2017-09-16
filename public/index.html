@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Fitness_Time Bootstarp Website Template | Home :: w3layouts</title>
+<title>Fitness_Time Bootstarp</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -20,6 +20,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					event.preventDefault();
 					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 				});
+
+
 			});
 		</script>
 <!---- start-smoth-scrolling---->
@@ -29,6 +31,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 </script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!----webfonts---->
 <link href='http://fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
@@ -70,6 +73,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<li class="page-scroll"><a href="#leader_board" class="scroll">Leader Board</a></li>
 							<li class="page-scroll"><a href="#hire_trainer" class="scroll">Hire a Trainer</a></li>
 							<li class="page-scroll"><a href="#fitness_event" class="scroll">Fitness Event</a></li>
+							<li class="page-scroll">
+								 	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Login</button>
+							</li>
 						</ul>
 						<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
 					</nav>
@@ -93,21 +99,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="feature-grids">
 						<div class="col-md-4 feature-grid">
 							<h3><span class="fea-icon2"> </span> STEP COUNT</h3>
-							<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
+							<p>Step Count Data</p>
 						</div>
 						<div class="col-md-4 feature-grid">
 							<h3><span class="fea-icon3"> </span> SWIMING</h3>
-							<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
+							<p>Swiming Data</p>
 						</div>
 						<div class="col-md-4 feature-grid">
 							<h3><span class="fea-icon4"> </span>CYCLING</h3>
-							<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
+							<p>Cycling Data</p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 				</div>
 			</div>
-			
+
 			<!-----//End-fearures---->
 			<!-----start-pricing-plans---->
 			<div class="pricing-plans" id="leader_board">
@@ -271,12 +277,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					  <h3>Partners</h3><span> </span>
 					</div>
 					<ul id="flexiselDemo3">
-						<li><img src="images/c1.png" /></li>
-						<li><img src="images/c2.png" /></li>
-						<li><img src="images/c3.png" /></li>
-						<li><img src="images/c4.png" /></li>
-						<li><img src="images/c5.png" /></li>
-						<li><img src="images/c6.png" /></li>
+						<li>Events</li>
+						<li>Events</li>
+						<li>Events</li>
+						<li>Events</li>
+						<li>Events</li>
+						<li>Events</li>
 					</ul>
 	<script type="text/javascript">
 $(window).load(function() {
@@ -310,6 +316,76 @@ $(window).load(function() {
 <script type="text/javascript" src="js/jquery.flexisel.js"></script>
 </div>
 </div>
+
+<!-- Login Form -->
+
+<div class="container">
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" id="close-form" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">User Login</h4>
+        </div>
+        <div class="modal-body">
+          <form id="user_login_form">
+			  <div class="form-group">
+				  	<div class="col-md-4">
+					    <label for="name">Name :</label>
+					    <input type="input" class="form-control" id="name">
+					</div>
+					<div class="col-md-4">
+						<label for="dob">DOB :</label>
+					    <input type="date" class="form-control" id="dob">
+					</div>
+					<div class="col-md-4">
+					    <label for="age">age :</label>
+					    <input type="number" class="form-control" id="age">
+					</div>
+					<div class="clearfix"> </div>
+			  </div>
+			  <div class="form-group">
+			  	<div class="col-md-6">
+				    <label for="height">Height :</label>
+				    <input type="number" class="form-control" id="height">
+				</div>
+				  <div class="col-md-6">
+				    <label for="weight">Weight :</label>
+				    <input type="number" class="form-control" id="weight">
+				</div>
+				<div class="clearfix"> </div>
+			  </div>
+			    <div class="form-group">
+			  	  	<div class="col-md-4">
+			  		    <label for="step_target">Step :</label>
+			  		    <input type="number" class="form-control" id="step_target">
+			  		</div>
+			  		<div class="col-md-4">
+			  			<label for="cycling_target">Cycling :</label>
+			  		    <input type="number" class="form-control" id="cycling_target">
+			  		</div>
+			  		<div class="col-md-4">
+			  		    <label for="swim_target">Swiming :</label>
+			  		    <input type="number" class="form-control" id="swim_target">
+			  		</div>
+			  		<div class="clearfix"> </div>
+			    </div>
+			  	<button id="login-control" type="submit" class="btn btn-default pull-right">Submit</button>
+			  </div>
+			</form>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
   <div class="footer">
   	<div class="container">
 	   <div class="footer-top">
@@ -362,9 +438,6 @@ $(window).load(function() {
                  </form>
              </div>
             </div>
-      	    <div class="copy">
-		       <p> 2014 Template by <a href="http://w3layouts.com" target="_blank"> w3layouts</a></p>
-		    </div>
           </div>
           <script type="text/javascript">
 				$(document).ready(function() {
@@ -378,7 +451,52 @@ $(window).load(function() {
 					*/
 					
 					$().UItoTop({ easingType: 'easeOutQuart' });
-					
+					debugger;
+					// Ajax call for form submit
+					$("#login-control").on('click', function(event){
+
+						var name = $('#name').val();
+						console.log(name);
+
+						debugger;
+					    // cancels the form submission
+					    event.preventDefault();
+					    submitForm();
+					    return false;
+					});
+
+
+					function submitForm(){
+						var inputObj = {
+							name : $('#name').val(),
+							age : $('#age').val(),
+							dob : $('#dob').val(),
+							height : $('#height').val(),
+							weight : $('#weight').val(),
+							step_target : $('#step_target').val(),
+							cycling_target : $('#cycling_target').val(),
+							swim_target : $('#swim_target').val()
+						}
+
+					    $.ajax({
+					        type: "POST",
+					        contentType: "application/json",
+					        url: "https://limitless-brushlands-24318.herokuapp.com/user",
+					        data: JSON.stringify(inputObj),
+					        success : function(text){
+					            if (text){
+					                $('#name').val("");
+					                $('#age').val("");
+					                $('#dob').val("");
+					                $('#height').val("");
+					                $('#weight').val("");
+					                $('#step_target').val("");
+					                $('#cycling_target').val("");
+					                $('#swim_target').val("");		
+					                $("#close-form").click();			            }
+					        }
+					    });
+					}
 				});
 			</script>
 		    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;">top </span></a>
